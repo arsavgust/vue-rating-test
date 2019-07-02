@@ -36,7 +36,6 @@ export default {
       return this.user.id;
     },
     userName() {
-
       return `${this.user.name} ${this.user.secondName}`;
     },
     userInitials() {
