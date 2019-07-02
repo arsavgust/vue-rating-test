@@ -19,7 +19,6 @@ export default {
   },
   watch: {
     searchString(newVal) {
-      console.log('newVal', newVal);
       this.$emit('input', {
         users: this.$store.getters['Rating/getUsers'].filter(user => user.name.indexOf(newVal) >= 0 || user.secondName.indexOf(newVal) >= 0),
         searchString: newVal,

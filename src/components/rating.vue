@@ -108,7 +108,6 @@ export default {
   methods: {
     searchEnter(searchData) {
       if (searchData.searchString) {
-        console.log('searchData', searchData);
         this.setUsers(searchData.users);
       } else {
         this.setUsers(this.users);
